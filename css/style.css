@@ -1,0 +1,46 @@
+body{
+    margin: 30px;
+    font-family: poppins;
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}header p{
+    margin-top: -8px;
+}header h1{
+    margin-bottom: 15px;
+    font-family: roboto;
+}
+
+/* navigation*/
+nav{
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin: 15px, 0px, 15px;
+    display: grid;
+}
+a{
+    text-align: center;
+    background-color: blue;
+    align-items: center;
+    color: white;
+    margin: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+/* CARD */
+.card{
+  width: 100%;
+  align-items: center;
+  border: solid 0.5px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.card{
+    
+}

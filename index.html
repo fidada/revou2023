@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    </head>
+    <body>
+        <h1 class="title">Welcome To Katik</h1>
+        <p class="subtitle">
+            Hai Sobat, Selamat datang di katik:]
+            Sebuah web apps sederhana yang berfungsi untuk menghitung 
+            nilai luas dan keliling bangun datar
+        </p>
+        
+        <!-- Header / Navigation Bar -->
+        <header>
+            <div>
+                <div class="menu">
+                    <a class="menu-triangle" id="triangle" href="#triangle">Segitiga</a>
+                    <a id="parallelogram" href="#paralellogram">Jajar Genjang</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Page -->
+        <main>
+            <!-- Segitiga -->
+            <section id="triangle">
+                <div class="card">
+                    <div>
+                        <h2>Luas Segitiga</h2>
+                    </div>
+                    <img src="/assets/segitiga.png" alt="">
+                    <div>
+                        <h6>Rumus Luas</h6>
+                        <p>L = 1/2 x T x A</p>
+                    </div>
+                    <div>
+                        <p>Diaman</p>
+                        <p>L = ....</p>
+                        <p>L = ....</p>
+                        <p>L = ....</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitunf Luas Segitiga</h1>
+                        <form action="" class="form-triangle">
+                            <input type="number" name="base-triangle">
+                            <input type="number" name="height-triangle">
+                            <button type="submit" class="button-triangle" onclick="return calculateTriangle()">Hitung</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Jajar Genjang -->
+            <section id="paralellogram">
+                <div class="card">
+                    <div>
+                        <h2>Luas Jajar Genjang</h2>
+                    </div>
+                    <img src="/assets/segitiga.png" alt="">
+                    <div>
+                        <h6>Rumus Luas</h6>
+                        <p>L = 1/2 x T x A</p>
+                    </div>
+                    <div>
+                        <p>Diaman</p>
+                        <p>L = ....</p>
+                        <p>L = ....</p>
+                        <p>L = ....</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitunf Luas Jajar Genjang</h1>
+                        <form action="" class="form-triangle">
+                            <input type="number">
+                            <input type="number">
+                            <button type="submit" class="button-triangle">Hitung</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            Copright 2023 bilqis app kwangya
+        </footer>
+    </body>
+</html>

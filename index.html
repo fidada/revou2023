@@ -2,11 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="jvs/index.js"></script>
     </head>
     <body>
         <h1 class="title">Welcome To Katik</h1>
         <p class="subtitle">
-            Hai Sobat, Selamat datang di katik:]
+            Hai Sobat, Selamat datang di katik:] <br>
             Sebuah web apps sederhana yang berfungsi untuk menghitung 
             nilai luas dan keliling bangun datar
         </p>
@@ -25,60 +26,110 @@
         <main>
             <!-- Segitiga -->
             <section id="triangle">
+                <!-- Luas Segitiga -->
                 <div class="card">
                     <div>
-                        <h2>Luas Segitiga</h2>
+                        <h1>Luas Segitiga</h1>
                     </div>
-                    <img src="/assets/segitiga.png" alt="">
-                    <div>
-                        <h6>Rumus Luas</h6>
+                    <div class="img">
+                        <img src="assets/luassegitiga.jpg" alt="">
+                    </div>
+                    <div class="text-rumus">
+                        <h3>Rumus Luas</h3>
                         <p>L = 1/2 x T x A</p>
                     </div>
                     <div>
-                        <p>Diaman</p>
-                        <p>L = ....</p>
-                        <p>L = ....</p>
-                        <p>L = ....</p>
+                        <h3>Di mana:</h3>
+                        <p>L = Luas</p>
+                        <p>a = Alas</p>
+                        <p>t = Tinggi</p>
                     </div>
+                    <hr>
                     <div class="form-hitung">
-                        <h1>Hitunf Luas Segitiga</h1>
+                        <h3>Hitung Luas Segitiga</h3>
                         <form action="" class="form-triangle">
-                            <input type="number" name="base-triangle">
-                            <input type="number" name="height-triangle">
-                            <button type="submit" class="button-triangle" onclick="return calculateTriangle()">Hitung</button>
+                            <input type="number" name="base-triangle" id="base-triangle">
+                            <input type="number" name="height-triangle" id="height-triangle">
+                            <div class="card-result">
+                                <h3>L = 1/2 x T x A</h3>
+                                <h3 id="resultTriangleArea">L = 1/2 x   x  </h3>
+                                <h3 id="calculateTriangleArea" name="submit-triangle-area">L =   </h3>
+                            </div>
+                            <input  id="submit-triangle-area" type="submit" class="button-triangle" onclick="calculateTriangleArea()" value="Hitung">
+                        </form>
+                    </div>
+                </div>
+                <!-- Keliling Segitiga -->
+                <div class="card">
+                    <div>
+                        <h1>Keliling Segitiga</h1>
+                    </div>
+                    <div class="img">
+                        <img src="assets/keliling-segitiga.jpg" alt="keliling-segitiga.jpg">
+                    </div>
+                    <div class="text-rumus">
+                        <h3>Rumus Keliling Segitiga</h3>
+                        <p>K = S1 + S2 + S3</p>
+                    </div>
+                    <div>
+                        <h3>Di mana:</h3>
+                        <p>K = Keliling</p>
+                        <p>S1 = Sisi 1</p>
+                        <p>S2 = Sisi 2</p>
+                        <p>S3 = Sisi 3</p>
+                    </div>
+                    <hr>
+                    <div class="form-hitung">
+                        <h3>Hitung Keliling Segitiga</h3>
+                        <form action="" class="form-triangle">
+                            <input type="number" name="side1-triangle">
+                            <input type="number" name="side2-triangle">
+                            <input type="number" name="side3-triangle">
+                            <button type="submit" class="button-triangle" onclick="calculateKelilingTriangle()">Hitung</button>
                         </form>
                     </div>
                 </div>
             </section>
+            
+            <div id="berhitung" name="berhitung">
+                <input type="number" id="angka1">
+                <p> + </p>
+                <input type="number" id="angka2">
+                <label id="hasil">= </label>
+                <button onclick="oy()">!!!</button>
+            </div>
+            
 
             <!-- Jajar Genjang -->
             <section id="paralellogram">
                 <div class="card">
                     <div>
-                        <h2>Luas Jajar Genjang</h2>
+                        <h1>Luas Jajar Genjang</h1>
                     </div>
                     <img src="/assets/segitiga.png" alt="">
-                    <div>
-                        <h6>Rumus Luas</h6>
+                    <div class="text-rumus">
+                        <h3>Rumus Luas</h3>
                         <p>L = 1/2 x T x A</p>
                     </div>
                     <div>
-                        <p>Diaman</p>
-                        <p>L = ....</p>
-                        <p>L = ....</p>
-                        <p>L = ....</p>
+                        <h3>Di mana:</h3>
+                        <p>L = Luas</p>
+                        <p>a = Alas</p>
+                        <p>t = Tinggi</p>
                     </div>
+                    <hr>
                     <div class="form-hitung">
-                        <h1>Hitunf Luas Jajar Genjang</h1>
-                        <form action="" class="form-triangle">
+                        <h3>Hitung Luas Jajar Genjang</h3>
+                        <form action="" class="form-paralellogram">
                             <input type="number">
                             <input type="number">
-                            <button type="submit" class="button-triangle">Hitung</button>
+                            <button type="submit" class="button-paralellogram">Hitung</button>
                         </form>
                     </div>
                 </div>
             </section>
         </main>
+        <button onclick="oy()">lol</button>
 
         <!-- Footer -->
         <footer>

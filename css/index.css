@@ -5,13 +5,13 @@
 }
 /* BOddy */
 body{
-    padding: 20px;
+    padding: 30px;
     scroll-behavior: smooth;
 }
 
 /* Title */
 .title{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 .subtitle{
@@ -22,19 +22,22 @@ body{
 /* Header */
 .menu{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .menu > a{
     text-decoration: none;
+    padding: 10px 50px;
 }
 .menu-triangle{
     text-decoration: none;
     background-color: blue;
     color: white;
     padding: 10px 0px;
-    width: 100%;
     text-align: center;
     border-radius: 4px;
 }
@@ -43,16 +46,38 @@ body{
 main{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
 }
 
 /* Card */
 .card{
     border: 1px blue solid;
     padding: 20px;
-    box-shadow: 0px 14px 5px -7px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+.card hr{
+    margin: 30px 0px 30px;
 }
 
+/* image */
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.img img{
+    height: 300px;
+}
+
+/* Rumus Text */
+.text-rumus p{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* form triangle */
+.triangle{
+    gap: 20px;
+}
 .form-triangle{
     display: flex;
     flex-direction: column;
@@ -72,4 +97,33 @@ main{
     color: white;
     border: none;
     border-radius: 3px;
+}
+
+/* form paralellogram */
+.form-paralellogram{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form-paralellogram > input{
+    padding: 8px 4px;
+    border-radius: 6px;
+    width: 100%;
+}
+.button-paralellogram{
+    padding: 6px 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+/* card result  */
+.card-result{
+    position: relative;
+    align-items: end;
+    border: 3px blue solid;
+    padding: 8px 20px;
 }
